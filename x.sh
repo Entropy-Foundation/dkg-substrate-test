@@ -6,10 +6,10 @@ set -e
 
 clear
 
-cargo +nightly-2020-08-23 build -p rb-node
+cargo +nightly-2020-08-23 build --release -p rb-node
 
-authorities=(alice bob charlie dave)
-authorities=("${authorities[@]::$1}")
+authorities=(alice bob charlie dave eve ferdie)
+# authorities=("${authorities[@]::$1}")
 
 for i in ${!authorities[@]}; do
   auth=${authorities[$i]}

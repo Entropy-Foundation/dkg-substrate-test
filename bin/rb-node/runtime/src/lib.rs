@@ -269,9 +269,9 @@ impl pallet_sudo::Trait for Runtime {
 // The first nonce used by the Randomness Beacoin is the hash of the block number START_HEIGHT.
 // Randomness is included in blocks START_HEIGHT + K*RANDOMNESS_PERIOD, for K=1,2,3, ...
 // And the nonces for these are taken from START_HEIGHT + (K-1)*RANDOMNESS_PERIOD, for K=1,2,3, ...
-const DKG_READY: u32 = 10;
-const START_HEIGHT: u32 = 11;
-const RANDOMNESS_PERIOD: u32 = 2;
+const DKG_READY: u32 = 20;
+const START_HEIGHT: u32 = 21;
+const RANDOMNESS_PERIOD: u32 = 3;
 
 parameter_types! {
 	pub const DKGReady: u32 = DKG_READY;
